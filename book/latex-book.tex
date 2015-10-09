@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+
+\documentclass{../book/wot}   	
+\usepackage{subfiles}
+
+
+
+\def\FileName#1{#1/#1.tex}
+
+\begin{document}
+	\maketitle
+	
+	\tableofcontents
+	
+	\newread\file
+	\openin\file=chapterlist
+	\endlinechar-1
+	\loop\unless\ifeof\file
+	    \read\file to\fileline % Reads a line of the file into \fileline
+	    \IfFileExists{\FileName{\fileline}}{
+	   	% \FileName{\fileline}
+		\subfile{\FileName{\fileline}}
+	    }{
+	    	\newpage
+		\FileName{\fileline} Does not Exist
+	    }
+	\repeat
+	\closein\file
+	
+\end{document}
