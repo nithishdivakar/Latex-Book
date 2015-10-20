@@ -35,3 +35,8 @@
   }
   \thispagestyle{empty}
 ]
+
+
+\def\INIT{%
+\graphicspath{ {../\THIS/images/} {../}}
+}

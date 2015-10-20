@@ -1,6 +1,0 @@
-\contentsline {chapter}{\numberline {1}Chapter 1}{2}
-\contentsline {section}{\numberline {1.1}Base}{2}
-\contentsline {chapter}{\numberline {2}Chapter 2}{3}
-\contentsline {section}{\numberline {2.1}Base}{3}
-\contentsline {chapter}{\numberline {3}Chapter 3}{4}
-\contentsline {section}{\numberline {3.1}Base}{4}
